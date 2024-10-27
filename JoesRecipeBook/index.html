@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Book 2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/d9fb9701b0.js" crossorigin="anonymous"></script>
+    <style type="text/tailwindcss">
+      @font-face {
+        font-family: Plantin;
+        src: url(./src/assets/plantin-mt-pro/PlantinMTProSmBd.TTF);
+      }
+      * {
+        font-family: Plantin;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="flex justify-between h-[20%] w-full">
+      <div
+        class="logo mx-3 bg-[url('./src/assets/Photos/R.png')] w-20 h-20 bg-contain min bg-no-repeat  hover:cursor-pointer"
+      ></div>
+      <h1 class="text-3xl self-center text-center">Your Recipes</h1>
+        <i class="self-center fa-solid fa-user fa-2xl hover:cursor-pointer hover:scale-110 active:scale-100 mx-8"></i>
+    </svg>
+    </header>
+    <main class="flex flex-col">
+      <section id="tools" class="mt-5">
+        <button id="newRecipe" class="m-8">New Recipe <i class="fa-solid fa-plus fa-2xs"></i></button>
+      </section>
+      <section id="recipes-container" class="flex flex-col items-center min-[1250px]:flex-row flex-wrap grid-cols-3" >
+        <div id="recipeCard" class="shadow-md m-8 w-11/12 min-[700px]:w-5/12 max-[700px]:min-w-[375px] bg-stone-100 p-4 flex h-56 max-w-[450px] hover:scale-105">
+          <img src="./src/assets/Photos/landscape-placeholder.svg" alt="" class="w-4/12 h-auto">
+          <button class="hidden">Add image</button>
+          <div class="infopanel flex flex-col m-4 flex-1">
+            <h2>Enter Title Here</h2>
+            <textarea name="desc" id="recipeDesc" placeholder="Enter description Here" class="flex-1 bg-transparent resize-none outline-none"></textarea>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <!-- <script src="./Assets/script.js"></script> -->
+  </body>
+</html>
